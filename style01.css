@@ -1,6 +1,9 @@
 html {
   background-color: #FFFF;
 }
+body {
+  font-family: Garamond, serif;
+}
 h1 {
 	font-family: Helvetica, sans-serif;
 	text-align: center;
@@ -13,9 +16,6 @@ h2 {
 	font-family: Helvetica, sans-serif;
 	color: misty blue;
 }
-body {
-  font-family: Garamond, serif;
-}
 .odd{
 background-color:#F5F5F5;
 padding: 1px 5px 1px 5px;
@@ -23,4 +23,7 @@ padding: 1px 5px 1px 5px;
 .even{
 background-color:#FFFFFF;
 padding: 0px 5px;
+}
+a{ 
+text-decoration:none;
 }
