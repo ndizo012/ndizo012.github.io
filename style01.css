@@ -1,5 +1,6 @@
 html {
   background-color: #FFFF;
+  min-width: 400px;
 }
 body {
   font-family: Garamond, serif;
@@ -9,20 +10,26 @@ h1 {
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	background-color:salmon;
+	background-color:#2B6AD0;
 	color:ivory;
 }
 h2 {
 	font-family: Helvetica, sans-serif;
-	color: misty blue;
+	color:#1F4591;
 }
-.odd{
+div.odd{
 background-color:#F5F5F5;
 padding: 1px 5px 1px 5px;
 }
-.even{
+div.even{
 background-color:#FFFFFF;
 padding: 0px 5px;
+}
+div.centerOptions{
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    text-align:left;
 }
 a{ 
 text-decoration:none;
@@ -30,4 +37,8 @@ text-decoration:none;
 img {
   width: 668px;
   height: 291px;
+}
+#signature {
+  text-align: right;
+  font-size: 75%;
 }

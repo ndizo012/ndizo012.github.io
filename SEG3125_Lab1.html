@@ -10,19 +10,24 @@
 
 
 <div  class = "odd"> 
-<p> Please visit <a href="https://news.google.com/covid19/map?hl=en-CA&gl=CA&ceid=CA%3Aen" target="_blank">Google's Covid-19 infocenter</a> and evaluate the UI, then answer the questions below. </p> 
-<a href="https://news.google.com/covid19/map?hl=en-CA&gl=CA&ceid=CA%3Aen" target="_blank"><img src="google_covid19_infocenter.png" alt="google_covid19_infocenter" title="Google News Covid-19"></a>
+<p> Please visit 
+	<a href="https://news.google.com/covid19/map?hl=en-CA&gl=CA&ceid=CA%3Aen" target="_blank">
+	Google's Covid-19 infocenter
+	</a> 
+	and evaluate the UI, then answer the questions below. 
+	</p> 
+<a href="https://news.google.com/covid19/map?hl=en-CA&gl=CA&ceid=CA%3Aen" target="_blank">
+<img src="google_covid19_infocenter.png" alt="google_covid19_infocenter" title="Google News Covid-19">
+</a>
 
 </div>
-
-
 
 <form>
 	
     <div class = "even">
-    	<h2> ########## </h2>
-		<p>First Name:<input type="text" ></p>
-    	<p>Last Name:<input type="text" ></p>
+    	<h2> User Experience </h2>
+        <p>Specify one feature that you explored on the website</p>
+		<p><input type="text"  placeholder="Feature..." ></p>
     </div>
  
     <div  class = "odd">
@@ -51,6 +56,7 @@
     	<h2> Navigation </h2>
     	<p> How difficult was it to nagivate through the website? </p>
   		<select name="diff" id="difficulty">
+			<option value="select">...</option>
     		<option value="notDiff">Not difficult</option>
     		<option value="slightDiff">Slightly difficult</option>
     		<option value="diff">Difficult</option>
@@ -62,20 +68,20 @@
     <div  class = "odd">
     	<h2> User Productivity </h2>
     	<p>The Website Displays: </p>
+        	<div class = "centerOptions" >
 			<input type="checkbox"> Proper Functionality<br>
 			<input type="checkbox"> Consistency<br>
 			<input type="checkbox"> Efficiency<br>
         	<input type="checkbox"> Usability<br>
         	<input type="checkbox"> Reliability<br>
-        	<input type="checkbox"> Security and Data integrity:<br><br>
+        	<input type="checkbox"> Security and Data integrity<br><br>
+            </div>
     </div>
-    
-
-    
+   
     <div  class = "even">
     <br>
     	Comments:<br>
-		<textarea rows="5" cols="30" ></textarea>
+		<textarea rows="5" cols="50" ></textarea>
 			
 	<br>
 	<br>
@@ -84,10 +90,9 @@
 			SUBMIT
 		</button>
     </div>
-        
-        
-   
-    
+	
+    <p id="signature">Site created by Nathan Dizon-Mapula</p>	
+	
 </form>
 
 </body>
