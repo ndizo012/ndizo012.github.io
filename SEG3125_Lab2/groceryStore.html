@@ -39,14 +39,14 @@
 	</select>
 	
 	<br><br>
-	<button id="submit" type="button" class= "button1 button1" onclick="populateListProductChoices('dietSelect', 'organicSelect', 'displayProduct')"> Submit </button>
+	<button id="submit" type="button" class="button1" onclick="populateListProductChoices('dietSelect', 'organicSelect', 'displayProduct')"> Submit </button>
 	
 	
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
+  <p>We've made some recommendations based on your restrictions.</p>
 	 
 	 <!-- not implemented, items are already sorted in declaration
 	 <br><br>
@@ -57,10 +57,10 @@
 	 <br><br>
 	 -->
 	 
-	 Choose items to buy:
+	 Items:
 	 <div id="displayProduct"></div>
 	 <br><br>
-	 <button id="addCart" type="button" class=" button1 button1" onclick="selectedItems()">
+	 <button id="addCart" type="button" class="button1" onclick="selectedItems()">
 		Add to cart
 	</button>
 </div>
@@ -71,7 +71,7 @@
   <div id="displayCart"></div>
   
   <br><br>
-  <button id="checkout" type="button" class=" button1 button1" onclick='alert("checkout not implemented")'>
+  <button id="checkout" type="button" class=" button1" onclick='alert("checkout not implemented")'>
 		Proceed to Checkout
 		</button>
 </div>
@@ -80,6 +80,10 @@
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
+
+<script>
+document.getElementById("Client").click();
+</script>
 
 </body>
 </html>
