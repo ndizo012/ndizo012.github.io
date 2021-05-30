@@ -85,7 +85,8 @@ body {
 /* headers */
 h1 {
 	font-family: Times New Roman, serif;
-	color: #ED642B;
+	color: #FF6700;
+	text-shadow: 2px 2px 5px white;
 	font-size:300%;
 }
 h3 {
