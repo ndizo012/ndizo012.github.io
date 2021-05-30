@@ -65,6 +65,11 @@ html {
   min-width: 400px;
 }
 body {
+  
+  background-image: url('produce.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Arial, sans-serif;
 }
 
