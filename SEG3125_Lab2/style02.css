@@ -53,6 +53,17 @@ h3 {
 
 }
 
+/* buttons */
+button1 {
+    background-color: #f44336;
+    color: white;
+    border-radius: 8px;
+}
+button1:hover {
+  	background-color: white;
+  	color: #f44336;
+	}
+
 /* signature */
 #signature {
   text-align: right;
