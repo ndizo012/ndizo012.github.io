@@ -61,15 +61,16 @@
 
 /* General layout */
 html {
-  background-color: #FFFF;
-  min-width: 400px;
-}
-body {
-  
+  /*background-color: #FFFF;*/
+    
   background-image: url('produce.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  min-width: 400px;
+}
+body {
+
   font-family: Arial, sans-serif;
 }
 
