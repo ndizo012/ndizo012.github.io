@@ -4,12 +4,13 @@
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #282828;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
+  color: white;
   float: left;
   border: none;
   outline: none;
@@ -28,12 +29,12 @@
   background-color: #ccc;
 }
 
-.tab button1 {
+.tabcontent button1 {
     background-color: #f44336;
     color: white;
     border-radius: 8px;
 }
-.tab button1:hover {
+.tabcontent button1:hover {
   	background-color: white;
   	color: #f44336;
 	}
@@ -78,7 +79,7 @@ body {
 /* headers */
 h1 {
 	font-family: Times New Roman, serif;
-	color:white;
+	color: #FE5C36;
 
 }
 h3 {
