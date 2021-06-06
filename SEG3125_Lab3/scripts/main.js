@@ -28,7 +28,7 @@ function openInfo(evt, tabName) {
 
 function populateListProductChoices(slct1, slct2, slct3) {
 	
-	//alert("items have loaded, please visit Products page");
+	alert("Products updated");
 
     s1 = document.getElementById(slct1);
     s2 = document.getElementById(slct2);
@@ -75,7 +75,7 @@ function populateListProductChoices(slct1, slct2, slct3) {
 
 function selectedItems(){
 	
-	//alert("items added to cart.");
+	alert("items added to cart.");
 	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];

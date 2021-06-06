@@ -37,7 +37,7 @@
 
 /* Style the tab content */
 .tabcontent {
-  background: rgba(241,241,241,0.8);
+  background: rgba(203,252,142, 0.8);
   color: rgb(0,0,0);
   display: none;
   padding: 6px 12px;
@@ -89,8 +89,8 @@ body {
 /* headers */
 h1 {
 	font-family: Times New Roman, serif;
-	color: #46A908;
-	text-shadow: 2px 2px 5px white;
+	color: #FF6700;
+	text-shadow: 2px 2px 5px black;
 	font-size:300%;
 	text-align: center;
 }
