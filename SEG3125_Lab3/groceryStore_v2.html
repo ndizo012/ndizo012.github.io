@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dizzy Map's Grocery Store</title>
+	<link href="style02.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<h1> Dizzy's Grocery Store </h1>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')" id="defaultOpen">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Customer Page</h3>
+  <p>Select food preferences</p>
+	Dietary restriction: <br>
+	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1"> Vegeratian</label><br>
+	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		<label for="vehicle2"> Gluten Free</label><br>
+	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		<label for="vehicle3"> Lactose Intolerant</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		<label for="vehicle3"> Peanut Alergy</label><br>
+
+	<br><br>
+	Food Preference: <br>
+    <input type="checkbox" id="organicSelect" name="organicSelect" value="organic">
+		<label for="vehicle3"> Organic</label><br>
+	
+	<br><br>
+	<!--id="submit" type="button"-->
+	<button  class="button1" onclick="populateListProductChoices('dietSelect', 'organicSelect', 'displayProduct')"> Submit </button>
+	
+	
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We've made some recommendations based on your restrictions.</p>
+	 
+	 <!-- not implemented, items are already sorted in declaration
+	 <br><br>
+  	 Sort Products:
+	 <option value=''>...</option>
+	 <option value="HightoLow">High to Low</option>
+	 <option value="LowtoHigh">Low to High</option>
+	 <br><br>
+	 -->
+	 
+	 Items:
+	 <br>
+	 <div id="displayProduct"></div>
+	 <br><br>
+	 <!--id="addCart" type="button"-->
+	 <button  class="button1" onclick="selectedItems()">
+		Add to cart
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <div id="displayCart"></div>
+  
+  <br><br>
+  <!--id="checkout" type="button"-->
+  <button class="button1" onclick='alert("checkout not implemented")'>
+		Proceed to Checkout
+		</button>
+</div>
+
+<p id="signature">Site created by Nathan Dizon-Mapula</p>	
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+<script>
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
