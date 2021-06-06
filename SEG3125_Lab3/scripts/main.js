@@ -29,9 +29,9 @@ function openInfo(evt, tabName) {
 function populateListProductChoices(slct1, slct2, slct3) {
 	
 	//alert("items have loaded, please visit Products page");
-	
-    var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+
+    s1 = document.getElementById(slct1);
+    s2 = document.getElementById(slct2);
 	var s3 = document.getElementById(slct3);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty

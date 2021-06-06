@@ -17,6 +17,8 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  width: 33%;
+  font-size: 16px;
 }
 
 /* Change background color of buttons on hover */
@@ -51,6 +53,7 @@
     color: white;
     border-radius: 8px;
 	cursor: pointer;
+	font-size: 16px;
 }
 .button1:hover {
   	background-color: white;
@@ -86,15 +89,16 @@ body {
 /* headers */
 h1 {
 	font-family: Times New Roman, serif;
-	color: #FF6700;
+	color: #46A908;
 	text-shadow: 2px 2px 5px white;
 	font-size:300%;
+	text-align: center;
 }
-h3 {
+h2 {
 	font-family: Times New Roman, serif;
 	margin: 0;
 	padding: 10px 0;
-
+	font-size:200%;
 }
 
 /* signature */

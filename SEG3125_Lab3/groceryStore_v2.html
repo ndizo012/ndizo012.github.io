@@ -3,6 +3,7 @@
 <head>
 	<title>Dizzy Map's Grocery Store</title>
 	<link href="style02.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -12,43 +13,44 @@
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')" id="defaultOpen">Client</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')"><i class="fas fa-shopping-cart"></i>Cart</button>
 </div>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Customer Page</h3>
+  <h2>Customer Information</h2>
   <p>Select food preferences</p>
+  
 	Dietary restriction: <br>
 	
-	<input type="checkbox" id="veggies" name="veggies" value="veggies">
-	<label > Vegeratian </label><br>
-	
-	<input type="checkbox" id="glutenFree" name="glutenFree" value="glutenFree">
-		<label> Gluten Free </label><br>
-	
-	<input type="checkbox" id="noDairy" name="noDairy" value="noDairy">
-		<label> Lactose Intolerant</label><br>
-	
-	<input type="checkbox" id="noPeanut" name="noPeanut" value="noPeanut">
-		<label> Peanut Alergy </label><br>
-	
-	
+	<select id="dietSelect" name="dietSelect">
+	<option value="">...</option>
+	<option value="LactoseIntolerant">Lactose-Intolerant</option>
+	<option value="NutAllergy">Nut Allergy</option>
+	<option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">Gluten Free</option>
+	<option value="None">None</option>
+	</select>
+
 	<br><br>
-	Food Preference: <br>
-		
-	<input type="checkbox" id="organicSelect" name="organicSelect" value="organicYes">
-		<label for="vehicle3"> Organic </label><br>
+	Organic: <br>
+	<select id="organicSelect" name="organicSelect">
+	<option value="">...</option>
+	<option value="organicYes">Yes</option>
+	<option value="organicNo">No</option>
+	<option value="organicNone">None</option>
+	</select>	
 	
 	<br><br>
 	<!--id="submit" type="button"-->
-	<button  class="button1" id="changeProducts" onclick="populateListProductChoices('dietSelect', 'organicSelect', 'displayProduct')"> Submit </button>
+	<button  class="button1"  onclick="populateListProductChoices('dietSelect', 'organicSelect', 'displayProduct')"> Submit </button>
+	
 	
 	
 </div>
 
 <div id="Products" class="tabcontent">
-  <h3>Your targeted products</h3>
+  <h2>Targeted products</h2>
   <p>We've made some recommendations based on your restrictions.</p>
 	 
 	 <!-- not implemented, items are already sorted in declaration
@@ -71,7 +73,7 @@
 </div>
 
 <div id="Cart" class="tabcontent">
-  <h3>Cart</h3>
+  <h2>Cart</h2>
   <div id="displayCart"></div>
   
   <br><br>
@@ -88,10 +90,6 @@
 
 <script>
 document.getElementById("defaultOpen").click();
-
-document.getElementById("organicSelect").value = "organicYes";
-
-document.getElementById("changeProducts").click();
 
 </script>
 
