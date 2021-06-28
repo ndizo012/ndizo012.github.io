@@ -17,4 +17,6 @@ function openInfo(evt, tabName) {
 	evt.currentTarget.className += " active";
 
 }
-
+function confirm(){
+	alert("Appointment has been booked.");
+}
